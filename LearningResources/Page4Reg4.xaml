@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LearningResources.Page4Reg4">
+	<ContentView.Resources>
+		<ResourceDictionary>
+			<Color x:Key="txtColor">Blue</Color>
+			<Color x:Key="txtBgColor">Red</Color>
+			<Color x:Key="txtHeadingColor">Blue</Color>
+			<Style TargetType="Label">
+				<Setter Property="FontSize" Value="15">
+				</Setter>
+				<Setter Property="FontAttributes" Value="Bold">
+				</Setter>
+				<Setter Property="TextColor" Value="Red">
+				</Setter>
+			</Style>
+			<Style TargetType="Entry">
+				<Setter Property="FontSize" Value="15">
+				</Setter>
+				<Setter Property="FontAttributes" Value="Bold">
+				</Setter>
+				<Setter Property="BackgroundColor" Value="Red">
+				</Setter>
+			</Style>
+
+			<Style x:Key="baseCenterStyle" TargetType="View">
+				<Setter Property="HorizontalOptions" Value="Center">
+				</Setter>
+				</Style>
+			
+			<Style x:Key="lblBody" TargetType="Label" BasedOn="{StaticResource baseCenterStyle}">
+				<Setter Property="FontSize" Value="12">
+				</Setter>
+				<Setter Property="FontAttributes" Value="Bold">
+				</Setter>
+				<Setter Property="TextColor" Value="Red">
+				</Setter>
+
+			</Style>
+			<Style TargetType="Button" BasedOn="{StaticResource baseCenterStyle}">
+				<Setter Property="FontSize" Value="12">
+				</Setter>
+				<Setter Property="FontAttributes" Value="Bold">
+				</Setter>
+				<Setter Property="TextColor" Value="Red">
+				</Setter>
+
+				<Setter Property="BackgroundColor" Value="Yellow">
+				</Setter>
+			</Style>
+		</ResourceDictionary>
+	</ContentView.Resources>
+	<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+		<Label Text="Registeration Form" TextColor="{StaticResource txtHeadingColor}">
+		</Label>
+		<Label Text="Enter Your Name">
+		</Label>
+		<Entry x:Name="myName">
+		</Entry>
+		<Label Text="Enter Your Age">
+		</Label>
+		<Entry x:Name="myAge">
+		</Entry>
+		<Label Text="Enter Your Address">
+		</Label>
+		<Entry x:Name="myAddress">
+		</Entry>
+		<Label Text="Enter Your Study">
+		</Label>
+		<Entry x:Name="myStudy">
+		</Entry>
+		<Button Text="Click me">
+		</Button>
+		<Label Text="This is " Style="{StaticResource lblBody}">
+		</Label>
+	</StackLayout>
+</ContentPage>

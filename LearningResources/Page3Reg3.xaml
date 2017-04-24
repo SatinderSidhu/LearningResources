@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LearningResources.Page3Reg3">
+	<ContentView.Resources>
+		<ResourceDictionary>
+			<Color x:Key="txtColor">Blue</Color>
+			<Color x:Key="txtBgColor">Red</Color>
+			
+			<Style x:Key="baseStyle" TargetType="View">
+				<Setter Property="HorizontalOptions" Value="Start">
+				</Setter>
+
+			</Style>
+			<Style TargetType="Label" BasedOn="{StaticResource baseStyle}">
+				<Setter Property="FontSize" Value="15">
+				</Setter>
+				<Setter Property="TextColor" Value="Red">
+				</Setter>
+			</Style>
+			<Style TargetType="Entry" BasedOn="{StaticResource baseStyle}">
+				<Setter Property="FontSize" Value="15">
+				</Setter>
+				<Setter Property="BackgroundColor" Value="Red">
+				</Setter>
+			</Style>
+		</ResourceDictionary>
+	</ContentView.Resources>
+	<StackLayout VerticalOptions="Center">
+		<Label Text="Registeration Form" TextColor="{StaticResource txtHeadingColor}">
+		</Label>
+		<Label Text="Enter Your Name">
+		</Label>
+		<Entry x:Name="myName">
+		</Entry>
+		<Label Text="Enter Your Age">
+		</Label>
+	</StackLayout>
+</ContentPage>

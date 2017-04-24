@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LearningResources.App">
+	<Application.Resources>
+		<!-- Application resource dictionary -->
+		<ResourceDictionary>
+			<Color x:Key="txtHeadingColor">Red</Color>
+
+			<Style TargetType="Label">
+				<Setter Property="FontSize" Value="15">
+				</Setter>
+				<Setter Property="FontAttributes" Value="Bold">
+				</Setter>
+				<Setter Property="TextColor" Value="Red">
+				</Setter>
+			</Style>
+
+			<Style TargetType="Entry">
+				<Setter Property="FontSize" Value="15">
+				</Setter>
+				<Setter Property="FontAttributes" Value="Bold">
+				</Setter>
+				<Setter Property="BackgroundColor" Value="Red">
+				</Setter>
+			</Style>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>
